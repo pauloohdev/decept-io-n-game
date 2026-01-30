@@ -261,12 +261,13 @@ export default function App() {
     return (
       <>
         <MurdererSelection
-          player={currentPlayer}
-          tableMethods={gameState.tableMethods}
-          tableEvidences={gameState.tableEvidences}
-          onConfirm={handleMurdererChoice}
-          loading={loading}
-        />
+        player={currentPlayer}
+        tableMethods={gameState.tableMethods ?? []}
+        tableEvidences={gameState.tableEvidences ?? []}
+        onConfirm={handleMurdererChoice}
+        loading={loading}
+      />
+
         {error && (
           <div className="fixed bottom-4 right-4 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg max-w-md">
             {error}
