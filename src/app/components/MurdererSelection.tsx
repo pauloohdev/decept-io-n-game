@@ -22,6 +22,11 @@ export function MurdererSelection({
   
   const canConfirm = selectedMethodId && selectedEvidenceId;
   
+  // Debug: Log para verificar se as cartas estão chegando
+  console.log('MurdererSelection - tableMethods:', tableMethods);
+  console.log('MurdererSelection - tableEvidences:', tableEvidences);
+  console.log('MurdererSelection - player.role:', player.role);
+  
   const handleConfirm = () => {
     if (canConfirm) {
       onConfirm(selectedMethodId, selectedEvidenceId);
@@ -35,6 +40,20 @@ export function MurdererSelection({
           <h2 className="text-2xl font-bold text-white mb-4">Aguarde...</h2>
           <p className="text-slate-300">
             O Assassino está escolhendo o método e a evidência do crime.
+          </p>
+        </div>
+      </div>
+    );
+  }
+  
+  // Se não há cartas na mesa ainda, mostrar loading
+  if (!tableMethods.length || !tableEvidences.length) {
+    return (
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
+        <div className="max-w-md w-full bg-slate-800 rounded-lg p-8 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Carregando...</h2>
+          <p className="text-slate-300">
+            Preparando as cartas...
           </p>
         </div>
       </div>

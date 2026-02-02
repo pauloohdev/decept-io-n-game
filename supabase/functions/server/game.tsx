@@ -140,6 +140,9 @@ export async function startGame(roomCode: string): Promise<boolean> {
   state.tableMethods = shuffledMethods.slice(0, 4);
   state.tableEvidences = shuffledEvidences.slice(0, 4);
   
+  console.log('startGame - tableMethods:', state.tableMethods);
+  console.log('startGame - tableEvidences:', state.tableEvidences);
+  
   state.phase = 'murderer_selection';
   
   await kv.set(`room:${roomCode}`, state);
