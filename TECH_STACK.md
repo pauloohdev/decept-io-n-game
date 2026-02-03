@@ -368,7 +368,7 @@ type Role =
 
 ---
 
-## 🚀 Performance & Optimization
+## Performance & Optimization
 
 ### Frontend
 
@@ -622,7 +622,7 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 ### Curto Prazo
 - [ ] WebSocket para atualização em tempo real
 - [ ] Animações de transição
-- [ ] Som effects (opcional)
+- [ ] Sound effects 
 - [ ] Modo espectador
 
 ### Médio Prazo
@@ -631,15 +631,9 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 - [ ] Estatísticas de jogadores
 - [ ] Ranking/leaderboard
 
-### Longo Prazo
-- [ ] Mobile app (React Native)
-- [ ] IA para substituir jogadores
-- [ ] Torneios automáticos
-- [ ] Internacionalização (i18n)
-
 ---
 
-## 📖 Resources
+## Resources
 
 ### Documentation
 
@@ -651,11 +645,6 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 - [Deno Manual](https://deno.land/manual)
 - [Supabase Docs](https://supabase.com/docs)
 
-### Game Rules
-
-- [Deception Official Rules](https://boardgamegeek.com/boardgame/156129/deception-murder-hong-kong)
-
----
 
 ## Team & Contributions
 
@@ -666,15 +655,6 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 - **Commits**: Conventional Commits
 - **Branching**: Git Flow
 
-### Contributing Guidelines
-
-1. Fork the repository
-2. Create feature branch (`feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
----
 
 
 **Last Updated**: 2026-02-02  
